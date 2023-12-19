@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Flexbox</title>
+  </head>
+  <style>
+    .cities {
+      display: flex;
+
+      justify-content: space-evenly;
+    }
+/* we use flex 1 on the child to make sure that the spacing is always even */
+    .city{
+      border:1px solid red;
+      padding:20px;
+      flex:1; 
+    }
+  </style>
+  <body>
+    <div class="cities">
+      <div class="city">Paris</div>
+      <div class="city">Bangkok</div>
+      <div class="city">Lisbon</div>
+      <div class="city">San Fransisco</div>
+    </div>
+  </body>
+</html>
