@@ -10,11 +10,14 @@
     :root {
       --primary-color: #6ba292;
       --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      --gradient: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     }
-
+    body {
+      background: var(--gradient);
+    }
     h2 {
       color: var(--primary-color);
-       box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
     }
     h3 {
       color: darkblue;
