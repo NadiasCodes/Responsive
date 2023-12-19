@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+  </head>
+
+  <style>
+    :root {
+      --primary-color: #6ba292;
+      --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+       box-shadow: var(--box-shadow);
+    }
+    h3 {
+      color: darkblue;
+    }
+    p {
+      background-color: var(--primary-color);
+      color: white;
+      box-shadow: var(--box-shadow);
+    }
+  </style>
+  <body>
+    <h1>My website</h1>
+    <h2>Contact me</h2>
+    <h3>By email</h3>
+    <h4>by phone</h4>
+    <p>this is a paragraph</p>
+  </body>
+</html>
