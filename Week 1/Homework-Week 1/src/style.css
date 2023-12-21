@@ -1,18 +1,21 @@
 :root {
   --primary-color: #d4c4c0;
+  --button-color: #d6c3b7;
+  --link-color: #7a585c;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-html {
+body {
   background-color: #dbd2ca;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+
   font-family: "Rethink Sans", sans-serif;
 }
 
 h1 {
   font-size: 55px;
+  text-align: center;
+  margin-left: 31px;
 }
 
 .name {
@@ -38,7 +41,7 @@ h1 {
 
 .contact-button {
   margin: 20px;
-  background-color: #d6c3b7;
+  background-color: var(--button-color);
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border: 1px solid black;
@@ -46,8 +49,7 @@ h1 {
   padding: 20px 20px;
   border: 1px solid transparent;
   font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: var(--box-shadow);
   color: #41272c;
 }
 
@@ -61,13 +63,12 @@ h1 {
   padding: 20px 20px;
   border: 1px solid transparent;
   font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: var(--box-shadow);
   background-color: #c9b09a;
   color: #f5f5f5;
 }
 .about-button:hover {
-  background-color: #d6c3b7;
+  background-color: var(--button-color);
   cursor: pointer;
   color: #41272c;
 }
@@ -103,7 +104,7 @@ h1 {
   text-decoration: none;
 }
 .homepage-link:hover {
-  color: #7a585c;
+  color: var(--link-color);
 }
 .footer-link {
   text-align: center;
@@ -115,28 +116,30 @@ h1 {
   text-align: center;
   font-size: 28px;
   text-decoration: none;
-  color: #7a585c;
+  color: var(--link-color);
 }
 .contact-mail:visited {
   color: #41272c;
 }
 
 .contact-mail:hover {
-  color: #7a585c;
+  color: var(--link-color);
 }
 .paragraph-box {
   display: flex;
   margin: 30px 0;
   line-height: 2;
+  margin: 60px auto;
+  max-width: 900px;
 }
 
 .article-one,
 .article-two {
-  flex-wrap: wrap;
   background-color: var(--primary-color);
   border-radius: 7px;
   margin: 10px;
   flex: 1;
   width: fit-content;
   text-align: center;
+  white-space: nowrap;
 }
