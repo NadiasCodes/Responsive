@@ -14,7 +14,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -30,6 +31,11 @@ h3 {
   opacity: 0.7;
 }
 
+.intro {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .container-fluid {
   background-color: #eaeef5;
   padding: 18px;
@@ -38,11 +44,6 @@ h3 {
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.intro {
-  text-align: center;
-  margin-top: 20px;
 }
 
 img {
@@ -108,4 +109,33 @@ img {
 .lorem-text {
   color: black;
   font-size: 17px;
+}
+
+/* Styling the about me page */
+
+.about-me,
+.h2-about-me {
+  text-align: center;
+}
+.about-me {
+  font-size: 90px;
+  font-weight: 500;
+}
+.h2-about-me {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.col-sm-4 {
+  border: 1px solid white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
