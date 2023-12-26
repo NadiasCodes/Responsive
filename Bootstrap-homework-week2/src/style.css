@@ -132,10 +132,14 @@ img {
   text-align: center;
 }
 
-.col-sm-4 {
-  border: 1px solid white;
+.about-images {
+  margin: 100px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
+
+
