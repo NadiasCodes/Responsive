@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Queries 📱</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    p {
+      font-size: 18px;
+    }
+    @media (max-width: 800px) {
+      h1,
+      p {
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h2 {
+        display: none;
+      }
+    }
+    h3 {
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <!-- We use them to apply css only on specific screen resolutions -->
+    <!-- when i want some elements no to appear after some specific resolution. check h2 example -->
+    <!-- implementing bootstrap, see h3 example -->
+    <!-- reversed h3, i wanna display it but to hide it after a certain point. check h4 -->
+
+    <h1>CSS Media Queries📱</h1>
+    <h2>this is not important</h2>
+    <h3 class="d-none d-lg-block">bootstrap</h3>
+    <h4 class="d-block d-sm-none">this is for mobile devices</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ullam, eos
+      consectetur corporis facilis porro nobis quia eligendi sunt officia
+      cumque, ex et voluptate facere ipsam incidunt id ad aut.
+    </p>
+  </body>
+</html>
