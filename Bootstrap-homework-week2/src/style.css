@@ -34,11 +34,11 @@ h3 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 72px;
+    font-size: 55px;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .col-sm-6 img {
