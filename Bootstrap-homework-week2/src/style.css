@@ -40,6 +40,18 @@ h3 {
   h3 {
     font-size: 18px;
   }
+
+  .col-sm-4 img {
+    display: none;
+  }
+
+  .col-sm-4 h2,
+  p {
+    text-align: center;
+  }
+
+  a{display: block;
+    text-align: center;}
 }
 
 .intro {
@@ -182,9 +194,7 @@ img {
     font-size: 72px;
   }
 
-.h2-about-me{
-
-  font-size: 20px;
-}
-
+  .h2-about-me {
+    font-size: 20px;
+  }
 }
